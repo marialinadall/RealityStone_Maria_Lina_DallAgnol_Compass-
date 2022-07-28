@@ -1,9 +1,10 @@
 class Calculadora 
     def soma (x,y)
-        soma = x + y
+        x + y
     end 
 
     def subtrai (x,y)
-        subtração = x - y
+        x - y
     end 
+
 end 

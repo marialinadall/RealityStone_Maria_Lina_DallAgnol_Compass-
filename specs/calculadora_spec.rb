@@ -292,8 +292,6 @@ describe('CÁLCULO POTÊNCIA') do
     it('Deve potencializar quaisquer números com expoente 0') do 
         expect(calculadora.potencia(10,0)).to eq 1
     end 
-
-
 end 
 
 describe('CÁLCULO RAIZ QUADRADA') do

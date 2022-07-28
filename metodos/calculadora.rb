@@ -7,4 +7,8 @@ class Calculadora
         x - y
     end 
 
+    def multiplica (x,y)
+        x * y
+    end 
+
 end 

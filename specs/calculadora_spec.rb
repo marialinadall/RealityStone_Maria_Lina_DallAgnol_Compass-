@@ -115,6 +115,57 @@ describe('CÁLCULO MULTIPLICAÇÃO') do
     
     #operação: multiplicação
 
+    it('Deve multiplicar inteiros positivos') do 
+        expect(calculadora.multiplica(6,4)).to eq 24
+    end 
+
+    it('Deve multiplicar inteiros negativos') do 
+        expect(calculadora.multiplica(-6,-4)).to eq 24
+    end 
+
+    it('Deve multiplicar inteiro positivo com inteiro negativo') do 
+        expect(calculadora.multiplica(6,-4)).to eq -24
+    end 
+
+    it('Deve multiplicar inteiro negativo com inteiro positivo') do 
+        expect(calculadora.multiplica(-6,4)).to eq -24
+    end 
+
+    it('Deve multiplicar números com 0') do 
+        expect(calculadora.multiplica(6,0)).to eq 0
+    end 
+
+    it('Deve multiplicar float com inteiros positivos') do 
+        expect(calculadora.multiplica(2.25,4)).to eq 9
+    end 
+
+    it('Deve multiplicar inteiros positivos com float') do 
+        expect(calculadora.multiplica(4,2.25)).to eq 9
+    end 
+
+    it('Deve multiplicar float com inteiros negativos') do 
+        expect(calculadora.multiplica(2.4,-2)).to eq -4.8
+    end 
+
+    it('Deve multiplicar inteiros negativos com float') do 
+        expect(calculadora.multiplica(-2,2.4)).to eq -4.8
+    end 
+
+    it('Deve multiplicar float positivo com float negativo') do 
+        expect(calculadora.multiplica(2.28,-4.3).round(3)).to eq -9.804
+    end 
+
+    it('Deve multiplicar float negativo com float positivo') do 
+        expect(calculadora.multiplica(-4.3,2.28).round(3)).to eq -9.804
+    end 
+
+    it('Deve multiplicar floats positivos') do 
+        expect(calculadora.multiplica(3.76,2.5).round(1)).to eq 9.4
+    end 
+
+    it('Deve multiplicar floats negativos') do 
+        expect(calculadora.multiplica(-3.76,-2.5).round(1)).to eq 9.4
+    end 
 end 
 
 describe('CÁLCULO DIVISÃO') do
@@ -124,16 +175,17 @@ describe('CÁLCULO DIVISÃO') do
 
 end 
 
-describe('CÁLCULO MULTIPLICAÇÃO') do
+describe('CÁLCULO POTÊNCIA') do
     calculadora = Calculadora.new
     
-    #operação: potencialização
+    #operação: potenciação
 
 end 
 
-describe('CÁLCULO MULTIPLICAÇÃO') do
+describe('CÁLCULO RAIZ QUADRADA') do
     calculadora = Calculadora.new
     
     #operação: raiz quadrada
 
 end 
+

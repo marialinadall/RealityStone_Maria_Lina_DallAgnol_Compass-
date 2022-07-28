@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../metodos/calculadora.rb'
+require_relative '../src/calculadora.rb'
 
 describe('CÁLCULO ADIÇÃO') do
     calculadora = Calculadora.new
@@ -232,6 +232,67 @@ describe('CÁLCULO POTÊNCIA') do
     calculadora = Calculadora.new
     
     #operação: potenciação
+
+    it('Deve potencializar quaisquer números positivos') do 
+        expect(calculadora.potencia(10,2)).to eq 100
+        expect(calculadora.potencia(10.5,2)).to eq 110.25
+    end 
+
+    it('Deve potencializar quaisquer números negativos') do 
+        expect(calculadora.potencia(-10,-2)).to eq 0.01
+        expect(calculadora.potencia(-2.2,-1)).to eq -0.454545
+    end 
+
+    it('Deve potencializar inteiro negativo por positivo') do 
+        expect(calculadora.potencia(-10,2)).to eq 100
+    end 
+
+    it('Deve potencializar inteiro positivo por negativo') do 
+        expect(calculadora.potencia(2,-2)).to eq 0.25
+    end 
+
+    it('Deve potencializar número por ele mesmo') do 
+        expect(calculadora.potencia(2,2)).to eq 4
+        expect(calculadora.potencia(-2,-2)).to eq 0.25
+    end 
+
+    it('Deve potencializar números inteiros por 1') do 
+        expect(calculadora.potencia(12,1)).to eq 12
+        expect(calculadora.potencia(-12,1)).to eq -12
+    end 
+
+    it('Deve potencializar float negativo por inteiro positivo') do 
+        expect(calculadora.potencia(-10.5,2)).to eq 110.25
+    end 
+
+    it('Deve potencializar inteiro positivo por float negativo') do 
+        expect(calculadora.potencia(10,-2.5)).to eq 0.003162
+    end 
+
+    it('Deve potencializar float positivo por inteiro positivo') do 
+        expect(calculadora.potencia(10.2,2)).to eq 104.04
+    end 
+
+    it('Deve potencializar inteiro positivo por float positivo') do  
+        expect(calculadora.potencia(10,2.2)).to eq 158.489319
+    end 
+
+    it('Deve potencializar float negativo por inteiro negativo') do 
+        expect(calculadora.potencia(-10.5,-2)).to eq 0.009070
+    end 
+
+    it('Deve potencializar floats positivos') do 
+        expect(calculadora.potencia(10.6,2.65)).to eq 521.267373
+    end 
+
+    it('Deve potencializar quaisquer números com expoente 1') do 
+        expect(calculadora.potencia(10,1)).to eq 10
+    end 
+
+    it('Deve potencializar quaisquer números com expoente 0') do 
+        expect(calculadora.potencia(10,0)).to eq 1
+    end 
+
 
 end 
 

@@ -16,11 +16,20 @@ class Calculadora
         if y == 0
             return 'Não é possível dividir um número por 0, tente novamente!'
         end
-        
+
         if (x / y) != 0
             return (x/y).round(2)
         end
 
         x / y
     end
-end 
+
+    def potencia (x,y)
+
+        if x or y < 0
+            return ((x ** y).to_f).round(6)
+        end 
+
+        x ** y
+    end 
+end  

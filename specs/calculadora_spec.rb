@@ -173,6 +173,59 @@ describe('CÁLCULO DIVISÃO') do
     
     #operação: divisão
 
+    it('Deve dividir inteiros positivos') do 
+        expect(calculadora.divide(10,2)).to eq 5
+    end 
+
+    it('Não deve dividir quaisquer números por 0') do 
+        expect(calculadora.divide(10,0)).to include 'Não é possível dividir um número por 0, tente novamente!'
+    end 
+
+    it('Deve dividir inteiros negativos') do 
+        expect(calculadora.divide(-10,-2)).to eq 5
+    end 
+
+    it('Deve dividir inteiros positivos por inteiros negativos') do 
+        expect(calculadora.divide(10,-2)).to eq -5
+    end 
+
+    it('Deve dividir inteiros negativos por inteiros positivos') do 
+        expect(calculadora.divide(-10,2)).to eq -5
+    end 
+
+    it('Deve dividir floats positivos') do 
+        expect(calculadora.divide(10.75,2.3)).to eq 4.67
+    end 
+
+    it('Deve dividir floats negativos') do 
+        expect(calculadora.divide(10.75,2.3)).to eq 4.67
+    end 
+
+    it('Deve dividir floats positivos por floats negativos') do 
+        expect(calculadora.divide(10.75,-2.3)).to eq -4.67
+    end 
+
+    it('Deve dividir floats negativos por floats positivos') do 
+        expect(calculadora.divide(-10.75,2.3)).to eq -4.67
+    end 
+
+    it('Deve dividir inteiros positivos por floats positivos') do 
+        expect(calculadora.divide(10,2.5)).to eq 4
+    end 
+
+    it('Deve dividir floats positivos por inteiros positivos') do 
+        expect(calculadora.divide(20.5,2)).to eq 10.25
+    end 
+
+    it('Deve dividir inteiros negativos por floats positivos') do 
+        expect(calculadora.divide(-10,2.5)).to eq -4
+    end 
+    
+    it('Deve dividir floats positivos por inteiros negativos') do 
+        expect(calculadora.divide(10.75,-2)).to eq -5.38
+    end 
+
+
 end 
 
 describe('CÁLCULO POTÊNCIA') do

@@ -32,4 +32,13 @@ class Calculadora
 
         x ** y
     end 
+
+    def raizq (x)
+
+        if x < 0
+            return "Não pode ser realizado! Não há raiz quadrada de números negativos"
+        end
+
+        Math.sqrt(x).to_f.round(2)
+    end 
 end  

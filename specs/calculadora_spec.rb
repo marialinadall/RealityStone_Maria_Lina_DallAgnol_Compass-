@@ -299,5 +299,28 @@ describe('CÁLCULO RAIZ QUADRADA') do
     
     #operação: raiz quadrada
 
+    it('Deve calcular a raiz quadrada de números inteiros positivos') do 
+        expect(calculadora.raizq(169)).to eq 13 
+    end 
+
+    it('Não deve calcular a raiz quadrada de números inteiros negativos') do 
+        expect(calculadora.raizq(-169)).to include 'Não pode ser realizado! Não há raiz quadrada de números negativos'
+    end 
+
+    it('Deve calcular a raiz quadrada de floats positivos') do 
+        expect(calculadora.raizq(90.5)).to eq 9.51
+    end 
+
+    it('Não deve calcular a raiz quadrada de floats negativos') do 
+        expect(calculadora.raizq(-90.5)).to include 'Não pode ser realizado! Não há raiz quadrada de números negativos'
+    end 
+
+    it('Deve calcular a raiz quadrada de 0') do 
+        expect(calculadora.raizq(0)).to eq 0
+    end 
+
+    it('Deve calcular a raiz quadrada de inteiros com resultado float') do 
+        expect(calculadora.raizq(71)).to eq 8.43
+    end 
 end 
 

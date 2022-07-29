@@ -4,6 +4,7 @@ require_relative '../src/calculadora.rb'
 describe('CÁLCULO ADIÇÃO') do
     calculadora = Calculadora.new
 
+    #ínicio.
     #operação: adição 
 
     it('Deve somar dois números positivos inteiros') do 

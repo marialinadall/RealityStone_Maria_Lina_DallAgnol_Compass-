@@ -1,4 +1,7 @@
-class Calculadora 
+class Calculadora
+
+    #métodos
+    
     def soma (x,y)
         x + y
     end 

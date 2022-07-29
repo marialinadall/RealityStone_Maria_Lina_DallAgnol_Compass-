@@ -132,7 +132,7 @@ Bibliotecas e Frameworks utilizados nesse repositório:
 ## 💘 Agradecimentos 
 
 * Meus primeiros agradecimentos vão aos meus colegas, que me ajudaram quando eu precisei, especialmente o Bruno e a Júlia, obrigada pela troca de conhecimento!
-* Segundamente, agradeço muito a Luiza Tonatto, minha melhor amiga que está na mesma área que eu e acidentalmente no mesmo estágio. Obrigada por me ajudar e tirar minhas dúvidas, eu adquiri muito conhecimento com você.
+* Segundamente, agradeço muito a Luiza Tonatto, minha melhor amiga que está na mesma área que eu e acidentalmente no mesmo estágio. Obrigada por me ajudar e tirar minhas dúvidas, eu adquiri muito conhecimento com você, espero que seja assim sempre.
 * Um obrigada especial pelo Jacques e pela Larissa, que chegaram no final da Sprint, mas mesmo assim fizeram mais que o possível para auxiliar e tirar todas dúvidas e questões pendentes. O comprometimento de vocês me inspira.
 
 ## 👩‍💻 Autora
@@ -144,3 +144,5 @@ Bibliotecas e Frameworks utilizados nesse repositório:
 🔗 GitHub - https://github.com/marialinadall
 
     E-mail - marialinacdallagnol@gmail.com 
+    
+    
